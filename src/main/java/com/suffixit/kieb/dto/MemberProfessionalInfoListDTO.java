@@ -1,0 +1,20 @@
+package com.suffixit.kieb.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class MemberProfessionalInfoListDTO {
+
+    private Integer memberId;
+
+    private List<MemberProfessionalInfoDTO> memberProfessionalInfoDTOList;
+
+}

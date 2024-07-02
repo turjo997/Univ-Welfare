@@ -1,0 +1,63 @@
+server:
+  port: 8088
+  error:
+    include-binding-errors: always
+    include-message: always
+  tomcat:
+    connection-timeout: 600000
+spring:
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  codec:
+    max-in-memory-size: 300MB
+  datasource:
+    url: jdbc:mysql://smtest.suffixit.com:3306/kwfdb
+    username: appkwf
+    password: appKwF@321!
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: kuet1990@gmail.com
+    password: uykk yijy fjey yvqr
+    properties:
+      mail:
+        debug: false
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  #    hikari:
+  #      connectionTimeout: 30000
+  #      idleTimeout: 30000
+  #      maxLifetime: 2000000
+  #      minimumIdle: 5
+  #      maximumPoolSize: 30
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+
+
+fileStore:
+  directory: ${user.home}/kieb
+
+jwt:
+  auth:
+    secret_key : "6m4cnm00Y7d1pMY2Q5d+uHjOdfZ8DtQWt1bPDXIflMQ="
+    expires_in : 360000
+
+
+
+
+
+
+
