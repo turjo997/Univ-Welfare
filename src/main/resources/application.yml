@@ -15,16 +15,16 @@ spring:
   codec:
     max-in-memory-size: 300MB
   datasource:
-    url: jdbc:mysql://smtest.suffixit.com:3306/kwfdb
-    username: appkwf
-    password: appKwF@321!
+    url: [DB URL]
+    username: [username]
+    password: [pass]
     driverClassName: com.mysql.cj.jdbc.Driver
 
   mail:
     host: smtp.gmail.com
     port: 587
-    username: kuet1990@gmail.com
-    password: uykk yijy fjey yvqr
+    username: [mail]
+    password: [OTP]
     properties:
       mail:
         debug: false
